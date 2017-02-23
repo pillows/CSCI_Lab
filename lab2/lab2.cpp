@@ -100,14 +100,14 @@ cout << setw(2) << left << "Year" << setw(25) << right << "Population" << endl;
 cout << setprecision(0) << fixed;
 
 //Hardcode for testing
-
+/*
 initPop = 10;
 calcYears = 20;
 maxPop = 100;
 
 growthRate = 2.9;
 lossRate = .2;
-
+*/
 
 for(int i=1;i <=calcYears;i++){
 	if(i == 1)
