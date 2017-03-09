@@ -11,13 +11,13 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+
 int start_s=clock();
 int main(){
 
 /*
 Complete formula
 p(n+1) = (1+g-h)p(n) - gp(n)^2/M.
-
 */
 
 int initPop,calcYears;
@@ -29,19 +29,15 @@ double growthRate,lossRate,maxPop,finalPop;
 //g (growthRate) = rate of growth 
 //h (lossRate) = minimum loss rate
 //finalPop = final population
-
-
 //population loses gp(n) every year
-/*
-Initial population must at least be greater than 1
-If not then loop
-*/
+
+
 do {
 	cout << "Enter the initial population: ";
 	cin >> initPop;
 
 	
-} while(initPop < 1);
+    } while(initPop < 1); //Initial population must at least be greater than 1
 
 /*
 The number of years that are being calculated
