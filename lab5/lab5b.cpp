@@ -51,7 +51,7 @@ int numDigits(int num)  // return the number of digits in num
   }
 }
 
-int divisibleByNine(int num) {
+int transformNum(int num) {
   int leftover = num % 9;
   // cout << "leftover: " << leftover << endl;
   int lastDigit = digitAtIndex(num, numDigits(num) - 1);
@@ -110,7 +110,7 @@ int main() {
   cout << "Enter number: ";
   cin >> number;
   cout << sumDigits(number);
-  cout << divisibleByNine(number) << endl;
+  cout << transformNum(number) << endl;
   
   return 0;
 }
