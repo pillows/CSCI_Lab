@@ -28,6 +28,10 @@ int transformNum(int num);
 int sumDigits(int num);
 
 
+/*
+Test case
+2049 with index 3 will give 9
+*/
 int getDigit(int num, int index)  // return the index'th digit of num   97534 (4 indicies, to get index 2, )
 {
   int padding = 10; // This is to get the number depending on the index by dividing by a power of 10
@@ -45,6 +49,16 @@ int getDigit(int num, int index)  // return the index'th digit of num   97534 (4
   }
 }
 
+/*
+Test case:
+1024 
+will give
+7 (1+2+4)
+
+2048
+will give
+5 (2+4+8 = 14 = 1+4)
+*/
 int numDigits(int num)  // return the number of digits in num
 {
   int padding = 10; // This time padding will increase until num becomes 0 from division
@@ -100,7 +114,6 @@ int transformNum(int num) {
   */
   if(difference < 5)
   {
-    cout << "difference < 5\n";
     if(lastDigit < 4)
       result = (num - leftover);
     if(lastDigit >= 5)
@@ -108,7 +121,6 @@ int transformNum(int num) {
   }
   else
   {
-    cout << "else\n";
     if(lastDigit < 4)
       result = (num + (9 - leftover));
     if(lastDigit >= 5)
