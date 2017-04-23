@@ -11,7 +11,7 @@ OBJS = $(SRCS:.cpp=.o)
 
 EXECS = $(EXEC)
 
-CFLAGS += -Wall -O2
+CFLAGS += -g -Wall -O2
 LDLIBS += -lm -lncurses
 
 

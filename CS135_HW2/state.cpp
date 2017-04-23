@@ -208,6 +208,7 @@ namespace {
       }
       else {
         xloaded = false;
+        return MISS;
       }
     }
 
@@ -282,7 +283,9 @@ void update(state &s, Screen &screen, std::ostream &gamelog) {
         break;
     }
   }
-
+  else { // if didn't shoot or shot out of bounds
+    s.round = s.round + 1;
+  }
 
   if (s.round > s.rows * s.cols) {
     s.alive = false;
